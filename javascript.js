@@ -12,13 +12,13 @@ function Calculator(type)
         create_calculator.value=input;
     }
     this.backspace=function(){
-        if(operator!='=') {
+
             length = input.length;
             input = input.substring(0, length - 1);
             if (input == "")
                 input = "0";
             create_calculator.value = input;
-        }
+        
     }
     this.clear=function(){
         input = "0";
